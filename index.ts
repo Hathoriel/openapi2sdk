@@ -26,7 +26,7 @@ const aiCompletion = async (prompt: string) => {
   console.log(chalk.blue(prompt));
   try {
     const completion = await openai.chat.completions.create({
-      model: "gpt-4",
+      model: "gpt-4-1106-preview",
       messages: [
         {
           role: 'user',
